@@ -1,9 +1,9 @@
 <template>
   <div class="left-chart-2">
-    <div class="lc2-header">李四收费站</div>
-    <div class="lc2-details">设备运行总数<span>245</span></div>
+    <div class="lc2-header">柳州景点</div>
+    <div class="lc2-details">游客总数<span>657788</span></div>
     <dv-charts class="lc2-chart" :option="option" />
-    <dv-decoration-2 style="height:10px;" />
+    <dv-decoration-4 :reverse="true" style="margin-top:8px;height:5px;" />
   </div>
 </template>
 
@@ -17,11 +17,11 @@ export default {
           {
             type: 'pie',
             data: [
-              { name: '收费系统', value: 93 },
-              { name: '通信系统', value: 32 },
-              { name: '监控系统', value: 65 },
-              { name: '供配电系统', value: 44 },
-              { name: '其他', value: 52 }
+              { name: '百里柳江', value: 342 },
+              { name: '柳侯公园', value: 421 },
+              { name: '文庙', value: 244 },
+              { name: '东门城楼', value: 52 },
+              { name: '其他', value: 552 }
             ],
             radius: ['45%', '65%'],
             insideLabel: {

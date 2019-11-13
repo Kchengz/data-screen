@@ -1,9 +1,9 @@
 <template>
   <div class="left-chart-1">
-    <div class="lc1-header">张三收费站</div>
-    <div class="lc1-details">设备运行总数<span>430</span></div>
+    <div class="lc1-header">南宁景点</div>
+    <div class="lc1-details">游客总数<span>868187</span></div>
     <dv-capsule-chart class="lc1-chart" :config="config" />
-    <dv-decoration-2 style="height:10px;" />
+    <dv-decoration-4 :reverse="true" style="height:5px;" />
   </div>
 </template>
 
@@ -15,28 +15,28 @@ export default {
       config: {
         data: [
           {
-            name: '收费系统',
-            value: 167
+            name: '动物园',
+            value: 21578
           },
           {
-            name: '通信系统',
-            value: 67
+            name: '南湖公园',
+            value: 11578
           },
           {
-            name: '监控系统',
-            value: 123
+            name: '美丽南方',
+            value: 20168
           },
           {
-            name: '供配电系统',
-            value: 55
+            name: '狮山公园',
+            value: 12578
           },
           {
             name: '其他',
-            value: 98
+            value: 16354
           }
         ],
-        colors: ['#00baff', '#3de7c9', '#fff', '#ffc530', '#469f4b'],
-        unit: '件'
+        colors: ['#00baff', '#3de7c9', '#fff', '#ffc530', '#469f4b']
+        // unit: '人'
       }
     }
   }

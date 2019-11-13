@@ -1,15 +1,6 @@
 <template>
   <div class="right-chart-1">
-    <div class="rc1-header">赵六收费站</div>
-
-    <div class="rc1-chart-container">
-      <div class="left">
-        <div class="number">262</div>
-        <div>设备运行总数</div>
-      </div>
-
-      <dv-capsule-chart class="right" :config="config" />
-    </div>
+      <dv-scroll-board :config="config" />
   </div>
 </template>
 
@@ -19,29 +10,29 @@ export default {
   data () {
     return {
       config: {
+        header: ['城市', '游客量'],
         data: [
-          {
-            name: '收费系统',
-            value: 25
-          },
-          {
-            name: '通信系统',
-            value: 66
-          },
-          {
-            name: '监控系统',
-            value: 123
-          },
-          {
-            name: '供配电系统',
-            value: 72
-          },
-          {
-            name: '其他',
-            value: 99
-          }
+          ['南宁', '456456'],
+          ['柳州', '128964'],
+          ['桂林', '3456456'],
+          ['梧州', '63445'],
+          ['北海', '745678'],
+          ['钦州', '735412'],
+          ['玉林', '55278'],
+          ['贵港', '62856'],
+          ['防城港', '896125'],
+          ['崇左', '892565'],
+          ['来宾', '98965'],
+          ['贺州', '18965'],
+          ['河池', '38965'],
+          ['百色', '687624']
         ],
-        unit: '件'
+        headerBGC: '#22ffff19',
+        oddRowBGC: '#2299ff08',
+        evenRowBGC: '#22ff6606',
+        index: true,
+        columnWidth: [50],
+        align: ['center']
       }
     }
   }

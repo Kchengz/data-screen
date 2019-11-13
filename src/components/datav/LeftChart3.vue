@@ -1,7 +1,7 @@
 <template>
   <div class="left-chart-3">
-    <div class="lc3-header">王五收费站</div>
-    <div class="lc3-details">设备运行总数<span>245</span></div>
+    <div class="lc3-header">桂林景点</div>
+    <div class="lc3-details">游客总数<span>985684</span></div>
     <dv-capsule-chart class="lc3-chart" :config="config" />
   </div>
 </template>
@@ -14,28 +14,27 @@ export default {
       config: {
         data: [
           {
-            name: '收费系统',
-            value: 78
+            name: '两江四湖',
+            value: 78234
           },
           {
-            name: '通信系统',
-            value: 54
+            name: '十里画廊',
+            value: 54532
           },
           {
-            name: '监控系统',
-            value: 123
+            name: '龙脊梯田',
+            value: 35233
           },
           {
-            name: '供配电系统',
-            value: 167
+            name: '漓江漂流',
+            value: 46627
           },
           {
             name: '其他',
-            value: 77
+            value: 62312
           }
         ],
-        colors: ['#00baff', '#3de7c9', '#fff', '#ffc530', '#469f4b'],
-        unit: '件'
+        colors: ['#00baff', '#3de7c9', '#fff', '#ffc530', '#469f4b']
       }
     }
   }

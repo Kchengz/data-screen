@@ -3,15 +3,22 @@
     <dv-full-screen-container>
       <div class="main-header">
         <div class="mh-left">
+          <!-- <dv-decoration-1 style="width:200px;height:50px;" /> -->
           <!-- 技术支持:<a href="https://github.com/jiaming743/DataV">https://github.com/jiaming743/DataV</a> -->
           </div>
-        <div class="mh-middle">机电设备电子档案</div>
+        <div class="mh-middle">
+          <!-- <dv-decoration-7 style="color:#7ec699;"> -->
+            城市游客统计
+
+          <!-- </dv-decoration-7> -->
+          </div>
         <div class="mh-right">
-          <dv-border-box-2
+          <dv-decoration-1 style="width:200px;height:50px;" />
+          <!-- <dv-border-box-2
             style="width: 120px; height: 50px; line-height: 50px; text-align:center;margin-left:200px;"
           >
             综合管理台
-          </dv-border-box-2>
+          </dv-border-box-2> -->
         </div>
       </div>
 
@@ -26,20 +33,20 @@
 
         <div class="right-main-container">
           <div class="rmc-top-container">
-            <dv-border-box-1 class="rmctc-left-container">
+            <dv-border-box-8 class="rmctc-left-container">
 
               <Center-Cmp />
 
-            </dv-border-box-1>
+            </dv-border-box-8>
 
             <div class="rmctc-right-container">
-              <dv-border-box-6 class="rmctc-chart-1">
+              <dv-border-box-5 class="rmctc-chart-1">
 
                 <Right-Chart-1 />
 
-              </dv-border-box-6>
+              </dv-border-box-5>
 
-              <dv-border-box-6 class="rmctc-chart-2" :reverse="true">
+              <dv-border-box-6 class="rmctc-chart-2">
 
                 <Right-Chart-2 />
 
@@ -120,6 +127,7 @@ export default {
 
     .mh-middle {
       font-size: 30px;
+      line-height:60px;
     }
 
     .mh-left, .mh-right {
@@ -162,11 +170,11 @@ export default {
   }
 
   .rmctc-left-container {
-    width: 65%;
+    width: 50%;
   }
 
   .rmctc-right-container {
-    width: 35%;
+    width: 50%;
   }
 
   .rmc-bottom-container {

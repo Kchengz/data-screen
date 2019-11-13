@@ -1,15 +1,6 @@
 <template>
   <div class="right-chart-2">
-    <div class="rc1-header">孙七收费站</div>
-
-    <div class="rc1-chart-container">
-      <div class="left">
-        <div class="number">267</div>
-        <div>设备运行总数</div>
-      </div>
-
-      <dv-charts class="right" :option="option" />
-    </div>
+<dv-scroll-ranking-board :config="config" />
   </div>
 </template>
 
@@ -18,32 +9,41 @@ export default {
   name: 'RightChart2',
   data () {
     return {
-      option: {
-        series: [
+      config: {
+        data: [
           {
-            type: 'pie',
-            data: [
-              { name: '收费系统', value: 93 },
-              { name: '通信系统', value: 66 },
-              { name: '监控系统', value: 52 },
-              { name: '供配电系统', value: 34 },
-              { name: '其他', value: 22 }
-            ],
-            radius: ['45%', '65%'],
-            insideLabel: {
-              show: false
-            },
-            outsideLabel: {
-              labelLineEndLength: 10,
-              formatter: '{percent}%\n{name}',
-              style: {
-                fontSize: 14,
-                fill: '#fff'
-              }
-            }
+            name: '南宁',
+            value: 551323
+          },
+          {
+            name: '桂林',
+            value: 541255
+          },
+          {
+            name: '柳州',
+            value: 323454
+          },
+          {
+            name: '北海',
+            value: 51224
+          },
+          {
+            name: '防城港',
+            value: 253551
+          },
+          {
+            name: '来宾',
+            value: 51352
+          },
+          {
+            name: '梧州',
+            value: 25129
+          },
+          {
+            name: '贺州',
+            value: 25129
           }
-        ],
-        color: ['#00baff', '#3de7c9', '#fff', '#ffc530', '#469f4b']
+        ]
       }
     }
   }
